@@ -30,6 +30,6 @@ Known gotcha: notebooks may use paths like `../data/file.csv` or `data/file.csv`
 
 ## Working style
 
-- Respond in Korean (technical terms also given in English). Friendly tutor tone, assume no ML background.
+- Friendly tutor tone, assume no ML background.
 - When the user pastes an error from a notebook, remember the usual causes: cells run out of order (restart kernel, run from top), wrong relative data path, or dtype mismatches (float64 NumPy vs float32 tensors).
 - Academic integrity: help the user understand and learn; for assessed work, guide and explain rather than silently producing finished submissions.
