@@ -14,10 +14,12 @@ Key implication: tutorial notebooks constantly reference "Tutorial 10/11" and Ke
 
 ## Structure
 
-- `tutN/` — one folder per weekly tutorial, each containing a Jupyter notebook (`tutorialN.ipynb`) and a `data/` subfolder with CSVs.
-- `tut1/` — PyTorch fundamentals: tensors, autograd, `nn.Module`, manual training loops, early stopping, dropout, model save/load. Uses two datasets: `land_suitability.csv` (binary classification: Rainfall, Soil_pH, Slope, Elevation → Suitability) and `Weather_Data.csv` (regression: AirTemp_C, Rain_mm, WindSpeed_mps → Humidity_pct).
+- `tut/` — all tutorial notebooks live here, one subfolder per week (`weekN/`) holding that week's notebook and any data it needs. Saved model checkpoints (`.pth`) also land next to the notebook that produced them.
+- `tut/week1/tutorial1.ipynb` — PyTorch fundamentals: tensors, autograd, `nn.Module`, manual training loops, early stopping, dropout, model save/load. Uses two datasets in `tut/week1/data/`: `land_suitability.csv` (binary classification: Rainfall, Soil_pH, Slope, Elevation → Suitability) and `Weather_Data.csv` (regression: AirTemp_C, Rain_mm, WindSpeed_mps → Humidity_pct).
+- `tut/week2/tutorial2-AE and VAE.ipynb` — Autoencoders and Variational Autoencoders on MNIST (downloaded automatically by `torchvision` into a local `data/` folder next to the notebook, not checked into git).
+- `lecture/weekN/` — lecture slide PDFs (and any markdown conversions) for that week.
 
-Known gotcha: notebooks may use paths like `../data/file.csv` (from the original course machine layout), but data lives at `tutN/data/` next to the notebook — fix to `data/file.csv`.
+Known gotcha: notebooks may use paths like `../data/file.csv` or `data/file.csv` from an older course machine layout, but each notebook's data now lives in `data/` next to that notebook (e.g. `tut/week1/data/`) — fix relative paths accordingly.
 
 ## Environment
 

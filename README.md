@@ -9,15 +9,18 @@ This is not a software project — it's a working repo of weekly tutorial notebo
 ```
 ├── COMP662_S2_2026.md   # Course outline: weekly topics, assessment weights, due dates
 ├── TODO.md               # Running study TODO list
-├── tut1/                 # Tutorial 1: PyTorch fundamentals
-│   ├── tutorial1.ipynb
-│   └── data/
-│       ├── land_suitability.csv   # Binary classification dataset
-│       └── Weather_Data.csv       # Regression dataset
-└── tutN/                 # One folder per weekly tutorial (notebook + data)
+├── lecture/               # Lecture slides, one folder per week (lecture/weekN/)
+└── tut/                   # Tutorial notebooks, one folder per week
+    ├── week1/
+    │   ├── tutorial1.ipynb
+    │   └── data/
+    │       ├── land_suitability.csv   # Binary classification dataset
+    │       └── Weather_Data.csv       # Regression dataset
+    └── week2/
+        └── tutorial2-AE and VAE.ipynb
 ```
 
-Each `tutN/` folder contains that week's Jupyter notebook and a `data/` subfolder with the CSVs it uses.
+Each `tut/weekN/` folder contains that week's Jupyter notebook and, where needed, a `data/` subfolder with the CSVs it uses.
 
 ## Environment
 
