@@ -20,7 +20,7 @@ This repository is coursework for COMP662 (Generative AI), not a software produc
 Where `<type>` is one of:
 - `tut` — tutorial notebook work (new exercises, solved cells, analysis, plots)
 - `fix` — correcting a bug or error in notebook code (wrong data path, dtype mismatch, out-of-order cell fix, etc.)
-- `data` — adding or updating dataset files under `tutN/data/`
+- `data` — adding or updating dataset files under `tut/weekN/data/`
 - `docs` — documentation changes (CLAUDE.md, TODO.md, course notes)
 - `chore` — environment/dependency/config/maintenance tasks (`.venv`, `.idea`, `.claude` settings)
 
