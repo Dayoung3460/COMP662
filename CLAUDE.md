@@ -23,10 +23,10 @@ Known gotcha: notebooks may use paths like `../data/file.csv` or `data/file.csv`
 
 ## Environment
 
-- Python 3.14 virtualenv at `.venv/` with torch (CPU build), pandas, scikit-learn, matplotlib, jupyter, ipykernel installed.
-- Run scripts with `.venv\Scripts\python.exe`; install packages with `.venv\Scripts\python.exe -m pip install <pkg>`.
-- Machine is a Windows PC with no discrete GPU — PyTorch device resolves to `cpu` (notebooks include cpu/cuda/mps detection; small models run fine on CPU).
-- Registered Jupyter kernel is named `comp662` (display name "COMP662 (.venv)"). Start the server with `.venv\Scripts\python.exe -m jupyter notebook --notebook-dir=<repo root>`.
+- Python 3.9 (system `python3`) virtualenv at `.venv/` with torch (CPU build), pandas, scikit-learn, matplotlib, jupyter, ipykernel installed.
+- Run scripts with `.venv/bin/python`; install packages with `.venv/bin/python -m pip install <pkg>`.
+- Machine is a Mac with no discrete GPU — PyTorch device resolves to `cpu` or `mps` (notebooks include cpu/cuda/mps detection; small models run fine on CPU).
+- Registered Jupyter kernel is named `comp662` (display name "COMP662 (.venv)"). Start the server with `.venv/bin/python -m jupyter notebook --notebook-dir=<repo root>`.
 - Notebooks are edited in PyCharm; cells must run top-to-bottom (later cells depend on earlier variables).
 
 ## Working style
